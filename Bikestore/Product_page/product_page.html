@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../main_styles.css" rel="stylesheet">
+    <link href="product_page_styles.css" rel="stylesheet">
+    <title>Bikestore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="../Main_page/Main_page.html" class="logo">
+                <div class="image"><img src="../logo.jpg" alt=""></div>
+                <div class="sitename">Bikestore</div>
+            </a>
+
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" class="search-input" placeholder="Поиск..." name="query" required>
+                    <button type="submit" class="search-button">Поиск</button>
+                </form>
+            </div>
+            <div class="contacts">
+                <a href="../Contacts_page/Contacts_page.html" class="contact-button">Контакты</a>
+            </div>
+            <div class="contacts">
+                <button class="button" onclick="window.location.href='../Curt_page/curt_page.html'">
+                    Корзина
+                    <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->                    
+            </div>
+            <div class="tg">
+                <a href="https://t.me/bikestore" target="_blank">Наш телеграм: @bikestore</a>
+            </div>
+            </button>
+            <div class="signin">
+                <button class="button" onclick="window.location.href='../registration_page/log_in.html'">
+                    Войти
+                </button>
+                <button class="button" onclick="window.location.href='../registration_page/registration.html'">Регистрация</button>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="product-image">
+                <img src="../Products_page/Giant Contend 3.jpg" alt="Товар 3">
+                <div class="price">Цена: 1999 руб.</div>
+                <button class="button">Добавить в корзину</button>                
+            </div>
+            <div class="product-details">
+                <h2>Название товара</h2>
+                
+                
+                <div class="description">
+                    <h3>Описание</h3>
+                    <p>Здесь будет подробное описание товара. Вы можете указать его особенности, преимущества и другие важные детали.</p>
+                </div>
+                
+                <div class="specifications">
+                    <h3>Характеристики</h3>
+                    <ul>
+                        <li>Характеристика 1: Значение</li>
+                        <li>Характеристика 2: Значение</li>
+                        <li>Характеристика 3: Значение</li>
+                        <li>Характеристика 4: Значение</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="text1">
+                <p>Наш офис здесь!</p>
+                <p>Владимир </p>
+                <p>Проспект Ленина 70</p>
+                Все права защищены
+
+            </div>
+            <div class="text2">
+                <p>Позвони нам если есть вопросы</p>
+                <p><a href="tel:+123456789">+78005553535</a></p>
+                <p>Ежедневно с 8:00 до 20:00</p>               
+            </div>
+            <div class="text3">
+                <p>По вопросам сотрудничества обращаться </p>
+                <p>Свяжитесь с нами: <a href="mailto:info@bikestore.com">info@bikestore.com</a> </p>
+                
+            </div>
+            <div class="text4">
+                <p>Bikestore 2024</p>
+                <p> Все права защищены</p>
+               
+            </div>
+        </div>
+    </div>
+</body>

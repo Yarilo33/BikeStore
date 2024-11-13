@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Наша Компания</title>
+    <link href="../main_styles.css" rel="stylesheet">
+    <link href="contacts_page.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <a href="../Main_page/Main_page.html" class="logo">
+            <div class="image"><img src="../logo.jpg" alt=""></div>
+            <div class="sitename">Bikestore</div>
+        </a>            
+        
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" class="search-input" placeholder="Поиск..." name="query" required>
+                <button type="submit" class="search-button">Поиск</button>
+            </form>
+        </div>
+        <div class="contacts">
+            <a href="../Contacts_page/Contacts_page.html" class="contact-button">Контакты</a>
+        </div>
+        <div class="contacts">
+            <button class="button" onclick="window.location.href='../Curt_page/curt_page.html'">
+                Корзина
+            <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->  
+        </div>
+        <div class="tg">
+            <a href="https://t.me/bikestore" target="_blank">Наш телеграм: @bikestore</a>
+        </div>
+        </button>
+        <div class="signin">
+            <button class="button" onclick="window.location.href='../registration_page/log_in.html'">
+                Войти
+            </button>
+            <button class="button" onclick="window.location.href='../registration_page/registration.html'">Регистрация</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="map-and-addresses">
+            <div class="map">
+                <h2>Наш офис</h2>
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.1741414046707!2d40.39406731590878!3d56.13499968066192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414c7f03d8c78f33%3A0x7c7f0fb12a429b32!2sProspekt%20Lenina%2C%2070%2C%20Vladimir%2C%20Vladimirskaya%20oblast&#39;%2C%20600000!5e0!3m2!1sen!2sru!4v1637153000000!5m2!1sen!2sru" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="addresses">
+                <h2>Наши адреса</h2>
+                <ul>
+                    <li>Главный офис: Владимир Проспект Ленина 70</li>                    
+                </ul>
+                <h2>Контактная информация</h2> 
+                <p>Телефон: +7 (800) 555-35-35</p>
+                <p>Email: Bikestore@mail.ru</p>
+                <p>Время работы: Ежедневно, 8:00 - 20:00</p>
+            </div>
+        </section>
+        <section class="company-info">
+            <h2>О нашей компании</h2>
+            <p>Добро пожаловать в "Bikestore" – ваш надежный партнер в мире велосипедов с 2005 года. Наша история началась с небольшого магазина, основанного группой энтузиастов велоспорта, и за прошедшие годы мы выросли в одну из ведущих компаний по продаже велосипедов и аксессуаров в России.</p>
+            <p>Мы гордимся тем, что предлагаем широкий ассортимент велосипедов для всех возрастов и уровней подготовки – от детских моделей до профессиональных гоночных велосипедов. В нашем каталоге вы найдете продукцию ведущих мировых брендов, таких как Trek, Specialized, Giant, Cannondale и многих других.</p>
+            <p>Наша команда состоит из опытных велосипедистов и технических специалистов, которые не просто продают велосипеды, но и делятся своими знаниями и страстью к велоспорту. Мы предоставляем профессиональные консультации по выбору велосипеда, учитывая индивидуальные потребности каждого клиента.</p>
+            <p>В "ВелоМире" мы не просто продаем велосипеды – мы продвигаем здоровый и активный образ жизни. Регулярно организуем велопробеги, мастер-классы по обслуживанию велосипедов и участвуем в благотворительных велосипедных мероприятиях.</p>
+            <p>Наша миссия – сделать велоспорт доступным и привлекательным для каждого. Мы стремимся предоставить нашим клиентам лучший сервис, качественные товары и незабываемые впечатления от езды на велосипеде.</p>
+        </section>
+        
+
+        <!-- <section class="contact-form">
+            <h2>Свяжитесь с нами</h2>
+            <form>
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section> -->
+
+        
+    </div>
+    <div class="footer">
+        <div class="text1">
+            <p>Наш офис здесь!</p>
+            <p>Владимир </p>
+            <p>Проспект Ленина 70</p>
+            Все права защищены
+
+        </div>
+        <div class="text2">
+            <p>Позвони нам если есть вопросы</p>
+            <p><a href="tel:+123456789">+78005553535</a></p>
+            <p>Ежедневно с 8:00 до 20:00</p>               
+        </div>
+        <div class="text3">
+            <p>По вопросам сотрудничества обращаться </p>
+            <p>Свяжитесь с нами: <a href="mailto:info@bikestore.com">info@bikestore.com</a> </p>
+            
+        </div>
+        <div class="text4">
+            <p>Bikestore 2024</p>
+            <p> Все права защищены</p>       
+        </div>
+    </div>
+</body>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../main_styles.css" rel="stylesheet">
+    <link href="curt_styles.css" rel="stylesheet">
+    <title>Bikestore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="../Main_page/Main_page.html" class="logo">
+                <div class="image"><img src="../logo.jpg" alt=""></div>
+                <div class="sitename">Bikestore</div>
+            </a>
+
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" class="search-input" placeholder="Поиск..." name="query" required>
+                    <button type="submit" class="search-button">Поиск</button>
+                </form>
+            </div>
+            <div class="contacts">
+                <a href="../Contacts_page/Contacts_page.html" class="contact-button">Контакты</a>
+            </div>
+            <div class="contacts">
+                <button class="button" onclick="alert('Корзина открыта')">
+                    Корзина
+                    <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->                    
+            </div>
+            <div class="tg">
+                <a href="https://t.me/bikestore" target="_blank">Наш телеграм: @bikestore</a>
+            </div>
+            </button>
+            <div class="signin">
+                <button class="button" onclick="window.location.href='../registration_page/log_in.html'">
+                    Войти
+                </button>
+                <button class="button" onclick="window.location.href='../registration_page/registration.html'">Регистрация</button>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="cart-header">
+                <h2>Корзина</h2>
+                <p>Товаров выбрано: <span id="item-count">3</span></p>
+                <div class="delivery-options">
+                    <label>
+                        <input type="radio" name="delivery" value="delivery" checked> Доставка
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery" value="pickup"> Самовывоз
+                    </label>
+                </div>
+                <a href="../order_page/order_page.html":>
+                    <button  class="checkout-button">Оформить заказ</button>
+                </a>
+                </div>
+        
+            <div class="product-card">
+                <a href="../Product_page/product_page.html" >
+                    <img src="../Products_page/Giant Contend 3.jpg" alt="Товар 1">
+                </a>
+                <div class="product-description">
+                    <h3>Название товара 1</h3>
+                    <p>Описание товара 1.</p>
+                </div>
+                <div class="product-buttons">
+                    <button class="button1 remove-button" onclick="removeItem(this)">Удалить</button>
+                    <button class="button1 buy-button" onclick="buyNow()">Купить</button>
+                </div>
+            </div>
+        
+            <div class="product-card">
+                <a href="../Product_page/product_page.html" >
+                    <img src="../Products_page/Giant Contend 3.jpg" alt="Товар 2">
+                </a>
+                <div class="product-description">
+                    <h3>Название товара 2</h3>
+                    <p>Описание товара 2.</p>
+                </div>
+                <div class="product-buttons">
+                    <button class="button1 remove-button" onclick="removeItem(this)">Удалить</button>
+                    <button class="button1 buy-button" onclick="buyNow()">Купить</button>
+                </div>
+            </div>
+        
+            <div class="product-card">
+                <a href="../Product_page/product_page.html" class="product">
+                    <img src="../Products_page/Giant Contend 3.jpg" alt="Товар 3">
+                </a>
+
+                <div class="product-description">
+                    <h3>Название товара 3</h3>
+                    <p>Описание товара 3.</p>
+                </div>
+                <div class="product-buttons">
+                    <button class="button1 remove-button" onclick="removeItem(this)">Удалить</button>
+                    <button class="button1 buy-button" onclick="buyNow()">Купить</button>
+                </div>
+            </div>
+        
+            <div class="product-card">
+                <a href="../Product_page/product_page.html" class="product">
+                    <img src="../Products_page/Giant Contend 3.jpg" alt="Товар 4">
+                </a>
+                <div class="product-description">
+                    <h3>Название товара 4</h3>
+                    <p>Описание товара 4.</p>
+                </div>
+                <div class="product-buttons">
+                    <button class="button1 remove-button" onclick="removeItem(this)">Удалить</button>
+                    <button class="button1 buy-button" onclick="buyNow()">Купить</button>
+                </div>
+            </div>
+        
+            <div class="product-card">
+                <a href="../Product_page/product_page.html" class="product">
+                    <img src="../Products_page/Giant Contend 3.jpg" alt="Товар 3">
+                </a>
+                <div class="product-description">
+                    <h3>Название товара 5</h3>
+                    <p>Описание товара 5.</p>
+                </div>
+                <div class="product-buttons">
+                    <button class="button1 remove-button" onclick="removeItem(this)">Удалить</button>
+                    <button class="button1 buy-button" onclick="buyNow()">Купить</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="text1">
+                <p>Наш офис здесь!</p>
+                <p>Владимир </p>
+                <p>Проспект Ленина 70</p>
+                Все права защищены
+
+            </div>
+            <div class="text2">
+                <p>Позвони нам если есть вопросы</p>
+                <p><a href="tel:+123456789">+78005553535</a></p>
+                <p>Ежедневно с 8:00 до 20:00</p>               
+            </div>
+            <div class="text3">
+                <p>По вопросам сотрудничества обращаться </p>
+                <p>Свяжитесь с нами: <a href="mailto:info@bikestore.com">info@bikestore.com</a> </p>
+                
+            </div>
+            <div class="text4">
+                <p>Bikestore 2024</p>
+                <p> Все права защищены</p>
+               
+            </div>
+        </div>
