@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../main_styles.css" rel="stylesheet">
+    <link href="order_page.css" rel="stylesheet">
+    <title>Bikestore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="../Main_page/Main_page.html" class="logo">
+                <div class="image"><img src="../logo.jpg" alt=""></div>
+                <div class="sitename">Bikestore</div>
+            </a>
+
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" class="search-input" placeholder="Поиск..." name="query" required>
+                    <button type="submit" class="search-button">Поиск</button>
+                </form>
+            </div>
+            <div class="contacts">
+                <a href="../Contacts_page/Contacts_page.html" class="contact-button">Контакты</a>
+            </div>
+            <div class="contacts">
+                <button class="button" onclick="window.location.href='../Curt_page/curt_page.html'">
+                    Корзина
+                    <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->                    
+            </div>
+            <div class="tg">
+                <a href="https://t.me/bikestore" target="_blank">Наш телеграм: @bikestore</a>
+            </div>
+            </button>
+            <div class="signin">
+                <button class="button" onclick="window.location.href='../registration_page/log_in.html'">
+                    Войти
+                </button>
+                <button class="button" onclick="window.location.href='../registration_page/registration.html'">Регистрация</button>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="order-form">
+                <h2>Оформление заказа</h2>
+                <label for="card-number">Номер карты:</label>
+                <input type="text" id="card-number" placeholder="Введите номер карты" required>
+            
+                <label for="address">Адрес доставки:</label>
+                <input type="text" id="address" placeholder="Введите адрес доставки" required>
+            
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" placeholder="Введите номер телефона" required>
+                
+                <a href="../Main_page/Main_page.html" class="button1" >Подтвердить заказ</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="text1">
+                <p>Наш офис здесь!</p>
+                <p>Владимир </p>
+                <p>Проспект Ленина 70</p>
+                Все права защищены
+
+            </div>
+            <div class="text2">
+                <p>Позвони нам если есть вопросы</p>
+                <p><a href="tel:+123456789">+78005553535</a></p>
+                <p>Ежедневно с 8:00 до 20:00</p>               
+            </div>
+            <div class="text3">
+                <p>По вопросам сотрудничества обращаться </p>
+                <p>Свяжитесь с нами: <a href="mailto:info@bikestore.com">info@bikestore.com</a> </p>
+                
+            </div>
+            <div class="text4">
+                <p>Bikestore 2024</p>
+                <p> Все права защищены</p>
+               
+            </div>
+        </div>
+    </div>
+</body>

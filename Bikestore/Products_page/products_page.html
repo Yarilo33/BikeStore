@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../main_styles.css" rel="stylesheet">
+    <link href="products_page_styles.css" rel="stylesheet">
+    <title>Bikestore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="../Main_page/Main_page.html" class="logo">
+                <div class="image"><img src="../logo.jpg" alt=""></div>
+                <div class="sitename">Bikestore</div>
+            </a>
+
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" class="search-input" placeholder="Поиск..." name="query" required>
+                    <button type="submit" class="search-button">Поиск</button>
+                </form>
+            </div>
+            <div class="contacts">
+                <a href="../Contacts_page/Contacts_page.html" class="contact-button">Контакты</a>
+            </div>
+            <div class="contacts">
+                <button class="button" onclick="window.location.href='../Curt_page/curt_page.html'">
+                    Корзина
+                    <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->                    
+            </div>
+            <div class="tg">
+                <a href="https://t.me/bikestore" target="_blank">Наш телеграм: @bikestore</a>
+            </div>
+            </button>
+            <div class="signin">
+                <button class="button" onclick="window.location.href='../registration_page/log_in.html'">
+                    Войти
+                </button>
+                <button class="button" onclick="window.location.href='../registration_page/registration.html'">Регистрация</button>
+            </div>
+        </div>
+        <div class="container2">
+            <aside>
+                <div class="sort-options">
+                    
+                </div>
+                <h2>Фильтр</h2>
+                <form id="filter-form">
+                    <label>Сортировка:</label>
+                    <label>
+                        <input type="checkbox" name="sort" value="priceAsc" onchange="sortProducts('priceAsc')"> По цене (возрастание)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="sort" value="priceDesc" onchange="sortProducts('priceDesc')"> По цене (убывание)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="sort" value="nameAsc" onchange="sortProducts('nameAsc')"> По названию (А-Я)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="sort" value="nameDesc" onchange="sortProducts('nameDesc')"> По названию (Я-А)
+                    </label>
+                    <label for="brand">Бренд:</label>
+                    <select id="brand" name="brand">
+                        <option value="">Все</option>
+                        <option value="trek">Trek</option>
+                        <option value="giant">Giant</option>
+                        <option value="specialized">Specialized</option>
+                    </select>
+
+                    <label for="type">Тип:</label>
+                    <select id="type" name="type">
+                        <option value="">Все</option>
+                        <option value="mountain">Горный</option>
+                        <option value="road">Шоссейный</option>
+                        <option value="city">Городской</option>
+                    </select>
+
+                    <label for="price-min">Цена от:</label>
+                    <input type="number" id="price-min" name="price-min">
+
+                    <label for="price-max">Цена до:</label>
+                    <input type="number" id="price-max" name="price-max">
+
+                    <button type="submit">Применить фильтр</button>
+                </form>
+            </aside>
+
+            <section class="products">
+                <a href="../Product_page/product_page.html" class="product">
+                    <img src="Trek Marlin 5.jpg" alt="Trek Marlin 5">
+                    <div class="buttontxt">
+                        <div class="text">
+                            <h3>Trek Marlin 5</h3>
+                            <p>Тип: Горный</p>
+                            <p>Размер рамы: 17.5"</p>
+                            <p>Материал рамы: Алюминий</p>
+                            <p>Вес: 9 кг</p>
+                            <p>Цена: 54 999 ₽</p>
+                        </div>
+                        <button class="button1" onclick="window.location.href='../cart_page/cart.html'">
+                            <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->
+                        </button>
+                    </div>
+
+                </a>
+                <a href="../Product_page/product_page.html" class="product">
+                    <img src="Giant Contend 3.jpg" alt="Giant Contend 3">
+                    <div class="buttontxt">
+
+                        <div class="text">
+                            <h3>Giant Contend 3</h3>
+                            <p>Тип: Шоссейный</p>
+                            <p>Размер рамы: 56 см</p>
+                            <p>Материал рамы: Алюминий</p>
+                            <p>Вес: 9.6 кг</p>
+                            <p>Цена: 69 900 ₽</p>
+                        </div>
+                        <button class="button1" onclick="window.location.href='../cart_page/cart.html'">
+                            <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->
+                        </button>
+                    </div>
+
+                </a>
+                <a href="../Product_page/product_page.html" class="product">
+                    <img src="Specialized Sirrus 2.0.jpg" alt="Specialized Sirrus 2.0">
+                    <div class="buttontxt">
+                        <div class="text">
+                            <h3>Specialized Sirrus 2.0</h3>
+                            <p>Тип: Городской</p>
+                            <p>Размер рамы: L</p>
+                            <p>Материал рамы: Алюминий</p>
+                            <p>Вес: 10 кг</p>
+                            <p>Цена: 79 990 ₽</p>
+                        </div>
+                        <button class="button1" onclick="window.location.href='../cart_page/cart.html'">
+                            <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->
+                        </button>
+                    </div>
+
+                </a>
+                <a href="../Product_page/product_page.html" class="product">
+                    <img src="Trek Roscoe 7.jpg" alt="Trek Roscoe 7">
+                    <div class="buttontxt">
+                        <div class="text">
+                            <h3>Trek Roscoe 7</h3>
+                            <p>Тип: Горный</p>
+                            <p>Размер рамы: 18.5"</p>
+                            <p>Материал рамы: Алюминий</p>
+                            <p>Вес: 10.5 кг</p>
+                            <p>Цена: 129 999 ₽</p>
+                        </div>
+                        <button class="button1" onclick="window.location.href='../cart_page/cart.html'">
+                            <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->
+                        </button>
+                    </div>
+
+                </a>
+                <a href="../Product_page/product_page.html" class="product">
+                    <img src="Giant Defy Advanced 2.jpg" alt="Giant Defy Advanced 2">
+                    <div class="buttontxt">
+                        <div class="text">
+                            <h3>Giant Defy Advanced 2</h3>
+                            <p>Тип: Шоссейный</p>
+                            <p>Размер рамы: M</p>
+                            <p>Материал рамы: Карбон</p>
+                            <p>Вес: 9.3 кг</p>
+                            <p>Цена: 199 900 ₽</p>
+                        </div>
+                        <button class="button1" onclick="window.location.href='../cart_page/cart.html'">
+                            <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->
+                        </button>
+                    </div>
+
+                </a>
+                <a href="../Product_page/product_page.html" class="product">
+                    <img src="Specialized Rockhopper Comp 29.jpg" alt="Specialized Rockhopper Comp 29">
+                    <div class="buttontxt">
+                        <div class="text">
+                            <h3>Specialized Rockhopper Comp 29</h3>
+                            <p>Тип: Горный</p>
+                            <p>Размер рамы: L</p>
+                            <p>Материал рамы: Алюминий</p>
+                            <p>Вес: 9.7 кг</p>
+                            <p>Цена: 89 990 ₽</p>
+                        </div>
+                        <button class="button1" onclick="window.location.href='../cart_page/cart.html'">
+                            <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->
+                        </button>
+                    </div>
+                </a>
+                <a href="../Product_page/product_page.html" class="product">
+                    <img src="Trek Fuel EX 5.jpg" alt="Trek Fuel EX 5">
+                    <div class="buttontxt">
+                        <div class="text">
+                            <h3>Trek Fuel EX 5</h3>
+                            <p>Тип: Горный (двухподвес)</p>
+                            <p>Размер рамы: 18.5"</p>
+                            <p>Материал рамы: Алюминий</p>
+                            <p>Вес: 9.1 кг</p>
+                            <p>Цена: 219 999 ₽</p>
+                        </div>
+                        <button class="button1" onclick="window.location.href='../cart_page/cart.html'">
+                            <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->
+                        </button>
+                    </div>
+                </a>
+
+                <a href="../Product_page/product_page.html" class="product">
+                    <img src="Giant TCR Advanced 2.jpg" alt="Giant TCR Advanced 2">
+                    <div class="buttontxt">
+                        <div class="text">
+                            <h3>Giant TCR Advanced 2</h3>
+                            <p>Тип: Шоссейный</p>
+                            <p>Размер рамы: M</p>
+                            <p>Материал рамы: Карбон</p>
+                            <p>Вес: 7.8 кг</p>
+                            <p>Цена: 249 900 ₽</p>
+                        </div>
+                        <button class="button1" onclick="window.location.href='../cart_page/cart.html'">
+                            <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->
+                        </button>
+                    </div>
+                   
+                </a>
+
+                <a href="../Product_page/product_page.html" class="product">
+                    <img src="Specialized Stumpjumper Comp.jpg" alt="Specialized Stumpjumper Comp">
+                    <div class="buttontxt">
+                        <div class="text">
+                            <h3>Specialized Stumpjumper Comp</h3>
+                            <p>Тип: Горный (трейл)</p>
+                            <p>Размер рамы: L</p>
+                            <p>Материал рамы: Алюминий</p>
+                            <p>Вес: 9.7 кг</p>
+                            <p>Цена: 289 990 ₽</p>
+                        </div>
+                        
+                        <button class="button1" onclick="window.location.href='../cart_page/cart.html'">
+                            <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->
+                        </button>
+                    </div>
+                    
+                </a>
+            </section>
+        </div>
+        <div class="footer">
+            <div class="text1">
+                <p>Наш офис здесь!</p>
+                <p>Владимир </p>
+                <p>Проспект Ленина 70</p>
+                Все права защищены
+
+            </div>
+            <div class="text2">
+                <p>Позвони нам если есть вопросы</p>
+                <p><a href="tel:+123456789">+78005553535</a></p>
+                <p>Ежедневно с 8:00 до 20:00</p>               
+            </div>
+            <div class="text3">
+                <p>По вопросам сотрудничества обращаться </p>
+                <p>Свяжитесь с нами: <a href="mailto:info@bikestore.com">info@bikestore.com</a> </p>
+                
+            </div>
+            <div class="text4">
+                <p>Bikestore 2024</p>
+                <p> Все права защищены</p>
+               
+            </div>
+        </div>

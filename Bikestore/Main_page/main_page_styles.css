@@ -1,0 +1,379 @@
+.container {
+    display: grid;
+    place-items: center;
+}
+a {
+    text-decoration: none;
+}
+
+p.note>b {
+    color: white;
+}
+.bikes {
+    display: flex;
+    /* Устанавливаем контейнер как flex-контейнер */
+    justify-content: space-between;
+    /* Распределяем элементы с равными отступами */
+    width: 90vw;
+    height: 82vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+.bike {
+
+    border: 1px solid black;
+    /* Черная рамка вокруг каждого элемента */
+    /*background-color: white;  Цвет фона для каждого элемента */
+    margin: 5px;
+    /* Отступ между элементами */
+    box-sizing: border-box;
+    /* Учитывает рамки и отступы в ширине и высоте */
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.bike-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.7;
+    font-size: 48px;
+    /* Размер шрифта */
+    color: white;
+    /* Цвет текста */
+    text-shadow:
+        2px 2px 0 black,
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black;
+    /* Черный контур */
+    text-align: center;
+    /* Центрирование текста */
+    height: 47%;
+    margin: 5px;
+    background-image: url('../Main_page/горные.jpg');
+    /* Путь к изображению */
+    background-size: cover;
+    /* Масштабирование изображения, чтобы заполнить контейнер */
+    background-position: center;
+    /* Центрирование изображения */
+    background-repeat: no-repeat;
+    /* Запрет повторения изображения */
+}
+
+.bike-2:hover,
+.bike-1:hover,
+.bike-3:hover,
+.bike-4:hover,
+.bike-5:hover {
+    opacity: 1;
+}
+
+.bike-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.7;
+    font-size: 48px;
+    /* Размер шрифта */
+    color: white;
+    /* Цвет текста */
+    text-shadow:
+        2px 2px 0 black,
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black;
+    /* Черный контур */
+    text-align: center;
+    /* Центрирование текста */
+    height: 47%;
+    margin: 5px;
+    background-image: url('../Main_page/детские.webp');
+    /* Путь к изображению */
+    background-size: cover;
+    /* Масштабирование изображения, чтобы заполнить контейнер */
+    background-position: center;
+    /* Центрирование изображения */
+    background-repeat: no-repeat;
+    /* Запрет повторения изображения */
+}
+
+.bike-3 {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.7;
+    justify-content: center;
+    font-size: 48px;
+    /* Размер шрифта */
+    color: white;
+    /* Цвет текста */
+    text-shadow:
+        2px 2px 0 black,
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black;
+    /* Черный контур */
+    text-align: center;
+    /* Центрирование текста */
+    height: 95%;
+    width: 35%;
+    background-image: url('../Main_page/все.jpg');
+    /* Путь к изображению */
+    background-size: cover;
+    /* Масштабирование изображения, чтобы заполнить контейнер */
+    background-position: center;
+    /* Центрирование изображения */
+    background-repeat: no-repeat;
+    /* Запрет повторения изображения */
+}
+
+.bike-4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.7;
+    font-size: 48px;
+    /* Размер шрифта */
+    color: white;
+    /* Цвет текста */
+    text-shadow:
+        2px 2px 0 black,
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black;
+    /* Черный контур */
+    text-align: center;
+    /* Центрирование текста */
+    height: 47%;
+    margin: 5px;
+    background-image: url('../Main_page/шоссейный.jpg');
+    /* Путь к изображению */
+    background-size: cover;
+    /* Масштабирование изображения, чтобы заполнить контейнер */
+    background-position: center;
+    /* Центрирование изображения */
+    background-repeat: no-repeat;
+    /* Запрет повторения изображения */
+}
+div#paragraph1 p.note {
+    color: white;
+}
+.bike-5 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.7;
+    font-size: 48px;
+    /* Размер шрифта */
+    color: white;
+    /* Цвет текста */
+    text-shadow:
+        2px 2px 0 black,
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black;
+    /* Черный контур */
+    text-align: center;
+    /* Центрирование текста */
+    height: 47%;
+    margin: 5px;
+    background-image: url('../Main_page/гравийные.jpg');
+    /* Путь к изображению */
+    background-size: cover;
+    /* Масштабирование изображения, чтобы заполнить контейнер */
+    background-position: center;
+    /* Центрирование изображения */
+    background-repeat: no-repeat;
+    /* Запрет повторения изображения */
+}
+
+.block1, .block2 {
+    height: 100%;
+    width: 30%;
+}
+a[href="contact.html"] {
+    font-weight: bold;
+}
+
+
+
+
+.reviews-section {
+padding: 40px 20px;
+background-color: #f9f9f9;
+}
+
+.reviews-title {
+text-align: center;
+color: #333;
+font-size: 32px;
+margin-bottom: 30px;
+font-weight: 700;
+}
+
+.reviews-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.review-card {
+background-color: #ffffff;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin: 15px;
+padding: 20px;
+width: 300px;
+transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+transform: translateY(-5px);
+}
+
+.reviewer {
+color: #333;
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.review-text {
+color: #666;
+font-size: 14px;
+line-height: 1.6;
+margin-bottom: 15px;
+}
+
+.rating {
+color: #ffd700;
+font-size: 20px;
+}
+
+.daily-deal {
+padding: 40px 0;
+margin: 40px 0;
+}
+
+.deal-container {
+max-width: 1000px;
+margin: 0 auto;
+background-color: #ffffff;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+position: relative;
+transition: all 0.3s ease;
+}
+
+.deal-container::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0);
+transition: background-color 0.3s ease;
+pointer-events: none;
+z-index: 1;
+}
+
+.deal-container:hover::before {
+background-color: rgba(0, 0, 0, 0.1);
+}
+
+.deal-container:hover {
+transform: translateY(-5px);
+box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+.deal-title {
+background-color: #ff6b6b;
+color: #ffffff;
+text-align: center;
+padding: 15px 0;
+font-size: 28px;
+margin: 0;
+}
+
+.deal-content {
+display: flex;
+padding: 30px;
+}
+
+.deal-image {
+width: 50%;
+object-fit: cover;
+border-radius: 5px;
+}
+
+.deal-info {
+width: 50%;
+padding-left: 30px;
+}
+
+.bike-name {
+font-size: 24px;
+color: #333;
+margin-bottom: 15px;
+}
+
+.bike-description {
+font-size: 16px;
+color: #666;
+margin-bottom: 20px;
+}
+
+.price-block {
+margin-bottom: 10px;
+}
+
+.original-price {
+font-size: 18px;
+color: #999;
+text-decoration: line-through;
+margin-right: 10px;
+}
+
+.discounted-price {
+font-size: 28px;
+color: #ff6b6b;
+font-weight: bold;
+}
+
+.discount-info {
+font-size: 16px;
+color: #007BFF;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.buy-button {
+background-color: #007BFF;
+color: white;
+border: none;
+padding: 12px 24px;
+font-size: 18px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+background-color: #0056b3;
+}
+
+.text2 a:hover{
+    color:#002a57
+}
+  
+.text3 a:hover{
+    color:#002a57
+}
+
+
+
+
+
+

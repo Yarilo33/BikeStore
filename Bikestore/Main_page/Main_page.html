@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../main_styles.css" rel="stylesheet">
+    <link href="main_page_styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Bikestore</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="../Main_page/Main_page.html" class="logo">
+                <div class="image"><img src="../logo.jpg" alt=""></div>
+                <div class="sitename">Bikestore</div>
+            </a>            
+            
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" class="search-input" placeholder="Поиск..." name="query" required>
+                    <button type="submit" class="search-button">Поиск</button>
+                </form>
+            </div>
+            <div class="contacts">
+                <a href="../Contacts_page/Contacts_page.html" class="contact-button">Контакты</a>
+            </div>
+            <div class="contacts">
+                <button class="button" onclick="window.location.href='../Curt_page/curt_page.html'">
+                    Корзина
+                <i class="fas fa-shopping-cart"></i> <!-- Иконка корзины для покупок -->  
+            </div>
+            <div class="tg">
+                <a href="https://t.me/bikestore" target="_blank">Наш телеграм: @bikestore</a>
+            </div>
+            </button>
+            <div class="signin">
+                <button class="button" onclick="window.location.href='../registration_page/log_in.html'">
+                    Войти
+                </button>
+                <button class="button" onclick="window.location.href='../registration_page/registration.html'">Регистрация</button>
+            </div>
+        </div>
+        <div class="bikes">
+            <div class="block1">
+                <a href="../Products_page/products_page.html" class="bike bike-1">Горные</a>
+                <a href="../Products_page/products_page.html" class="bike bike-4">Шоссейные</a>
+            </div>
+            <a href="../Products_page/products_page.html" class="bike bike-3">Все</a>
+            <div class="block2">
+                <a href="../Products_page/products_page.html" class="bike bike-2">Детские</a>
+                <a href="../Products_page/products_page.html" class="bike bike-5">Гравийные</a>
+            </div>
+            
+        </div>
+        <!-- <section class="daily-deal">
+            <div class="deal-container">
+              <h2 class="deal-title">Акция дня</h2>
+              <div class="deal-content">
+                <img src="Giant Contend 3.jpg" alt="Горный велосипед XTR Pro" class="deal-image">
+                <div class="deal-info">
+                  <h3 class="bike-name">Горный велосипед XTR Pro</h3>
+                  <p class="bike-description">Профессиональный горный велосипед для самых сложных трасс. Легкая алюминиевая рама, дисковые гидравлические тормоза, 27 скоростей.</p>
+                  <div class="price-block">
+                    <span class="original-price">89 999 ₽</span>
+                    <span class="discounted-price">69 999 ₽</span>
+                  </div>
+                  <p class="discount-info">Скидка 22% только сегодня!</p>
+                  <button class="buy-button">Купить сейчас</button>
+                </div>
+              </div>
+            </div>
+        </section> -->
+          
+        <section class="reviews-section">
+            <h2 class="reviews-title">Отзывы наших клиентов</h2>
+            <div class="reviews-container">
+              <div class="review-card">
+                <h3 class="reviewer">Алексей С.</h3>
+                <p class="review-text">Отличный велосипед! Легкий, маневренный и очень удобный. Езжу каждый день на работу и получаю огромное удовольствие.</p>
+                <div class="rating">★★★★★</div>
+              </div>
+          
+              <div class="review-card">
+                <h3 class="reviewer">Мария Д.</h3>
+                <p class="review-text">Купила горный велосипед и не могу нарадоваться. Отлично справляется с любым бездорожьем, а на трассе летит как птица!</p>
+                <div class="rating">★★★★☆</div>
+              </div>
+          
+              <div class="review-card">
+                <h3 class="reviewer">Игорь В.</h3>
+                <p class="review-text">Шоссейник превзошел все мои ожидания. Легкий, быстрый, отзывчивый. Идеален для длительных поездок и тренировок.</p>
+                <div class="rating">★★★★★</div>
+              </div>
+            </div>
+        </section>
+          
+
+        <div class="footer">
+            <div class="text1">
+                <p>Наш офис здесь!</p>
+                <p>Владимир </p>
+                <p>Проспект Ленина 70</p>			     
+                	                						                                                                                             Все права защищены
+                		
+            </div>
+            <div class="text2">
+                <p>Позвони нам если есть вопросы</p>
+                <p><a href="tel:+123456789">+78005553535</a></p>
+                <p>Ежедневно с 8:00 до 20:00</p>               
+            </div>
+            <div class="text3">
+                <p>По вопросам сотрудничества обращаться </p>
+                <p>Свяжитесь с нами: <a href="mailto:info@bikestore.com">info@bikestore.com</a> </p>
+                
+            </div>
+            <div class="text4">
+                <p>Bikestore 2024</p>
+                <p> Все права защищены</p>
+               
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
